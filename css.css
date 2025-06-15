@@ -102,7 +102,8 @@ main h2 {
   display: flex;
   gap: 2em;
   width: 209%;
-  height: 88svh;
+  /* height: 88svh; */
+  height: 100%;
 }
 
 .sidebar-open {
@@ -122,13 +123,16 @@ main h2 {
   padding: 0 0.75em;
   transform: translateX(0%);
   transition: transform 0.3s ease-out;
-  /* height: 90svh; */
+  height: 85svh;
   /* position: relative; */
 }
 
 .sidebar-footer {
   height: 50px;
   line-height: 35px;
+  position: absolute;
+  bottom: 0;
+  padding-left: 0.75em;
 }
 
 .sidebar-body ul {
@@ -146,6 +150,10 @@ main h2 {
   padding: 0.75em 0.5em;
   border-bottom: 1px solid var(--text-primary);
   display: flex;
+}
+
+.sidebar-body-submenu-1 {
+  height: 0;
 }
 
 .sidebar-body-submenu-2 {
@@ -420,4 +428,19 @@ footer .row .col-8 .row .col ul {
   footer .row {
     margin-top: 0;
   }
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Scrollbar samotný (palec, ktorý ťaháš) */
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Scrollbar samotný "box" */
+::-webkit-scrollbar {
+  width: 8px; /* alebo 0px ak chceš úplne skryť */
+  background: transparent;
 }

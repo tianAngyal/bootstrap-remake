@@ -89,7 +89,7 @@ main h2 {
   top: 0;
   right: 0;
   /* height: var(--body-height); */
-  height: 100dvh;
+  height: 100svh;
   width: var(--sidebar-width);
   background-color: azure;
   padding: 0.5em 0;
@@ -102,7 +102,7 @@ main h2 {
   display: flex;
   gap: 2em;
   width: 209%;
-  height: 100%;
+  height: 88svh;
 }
 
 .sidebar-open {
@@ -122,8 +122,13 @@ main h2 {
   padding: 0 0.75em;
   transform: translateX(0%);
   transition: transform 0.3s ease-out;
-  height: 90%;
+  /* height: 90svh; */
   /* position: relative; */
+}
+
+.sidebar-footer {
+  height: 50px;
+  line-height: 35px;
 }
 
 .sidebar-body ul {

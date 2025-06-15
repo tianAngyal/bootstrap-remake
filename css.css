@@ -89,7 +89,7 @@ main h2 {
   top: 0;
   right: 0;
   /* height: var(--body-height); */
-  height: 100svh;
+  height: 100dvh;
   width: var(--sidebar-width);
   background-color: azure;
   padding: 0.5em 0;
@@ -103,7 +103,7 @@ main h2 {
   gap: 2em;
   width: 209%;
   /* height: 88svh; */
-  height: 100%;
+  /* height: 100%; */
 }
 
 .sidebar-open {

@@ -99,6 +99,7 @@ main h2 {
 
 .sidebar-body-scrollable {
   display: flex;
+  gap: 2em;
 }
 
 .sidebar-open {

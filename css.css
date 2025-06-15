@@ -100,6 +100,8 @@ main h2 {
 .sidebar-body-scrollable {
   display: flex;
   gap: 2em;
+  width: 209%;
+  height: 100%;
 }
 
 .sidebar-open {
@@ -119,7 +121,8 @@ main h2 {
   padding: 0 0.75em;
   transform: translateX(0%);
   transition: transform 0.3s ease-out;
-  height: 100%;
+  height: 90%;
+  /* position: relative; */
 }
 
 .sidebar-body ul {
@@ -129,7 +132,7 @@ main h2 {
 }
 
 .sidebar-body-showMore {
-  transform: translateX(-100%);
+  transform: translateX(-99%);
 }
 
 .sidebar-body ul:first-child li {
@@ -138,6 +141,11 @@ main h2 {
   border-bottom: 1px solid var(--text-primary);
   display: flex;
 }
+
+.sidebar-body-submenu-2 {
+  overflow-y: scroll;
+}
+
 .sidebar-body-submenu-2 span {
   padding: 1em 0.5em;
   border-bottom: 1px solid var(--text-primary);

@@ -88,7 +88,8 @@ main h2 {
   position: fixed;
   top: 0;
   right: 0;
-  height: var(--body-height);
+  /* height: var(--body-height); */
+  height: 100dvh;
   width: var(--sidebar-width);
   background-color: azure;
   padding: 0.5em 0;
@@ -144,6 +145,7 @@ main h2 {
 
 .sidebar-body-submenu-2 {
   overflow-y: scroll;
+  scrollbar-color: transparent transparent;
 }
 
 .sidebar-body-submenu-2 span {
@@ -158,6 +160,7 @@ main h2 {
 .sidebar-body-submenu-2 ul {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .sidebar-body-submenu-2 ul li {

@@ -20,9 +20,9 @@
             <a href="#">Support</a>
             <a href="#">Pricing</a>
           </nav>
-          <span class="hamburger-icon order-2">
+          <a class="hamburger-icon order-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 448"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
-          </span>
+          </a>
         </div>
         <div class="pricing-header">
           <h1>Pricing</h1>
@@ -191,7 +191,29 @@
       </div>
     </div>
   </footer>
-  <div class="sidebar">
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>    
+  <!-- <div class="sidebar">
     <div class="sidebar-header">
       <span>Sidebar</span>
       <i class="fa-solid fa-xmark"></i>
@@ -208,7 +230,7 @@
           <li><a>link5</a></li>
           <li><a>link6</a></li></ul>
         </div>
-        <!-- <div class="sidebar-body-submenu-2">
+        <div class="sidebar-body-submenu-2">
           <span class="d-block w-100"><i class="fa-solid fa-chevron-left"></i></span>
           <ul>
           <li class="bg-primary"><div >1</div></li>
@@ -220,11 +242,11 @@
           <li class="bg-primary"><div>7</div></li>
           <li class="bg-secondary"><div>8</div></li>
         </ul>
-        </div> -->
+        </div>
       </div>
   </div>
     <div class="sidebar-footer">All rights reserved by Chrisko</div>
     
-  </div>
+  </div> -->
 </body>
 </html>

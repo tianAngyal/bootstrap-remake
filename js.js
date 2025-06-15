@@ -35,10 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 
-burgerIcon.addEventListener("click", () => {
-    b.classList.add("body-modal")
-    sidebar.classList.add("sidebar-open")
-})
 
 window.addEventListener("resize", () => {
     const sidebar = document.querySelector(".sidebar");
@@ -60,18 +56,24 @@ window.addEventListener("resize", () => {
 
 })
 
-closeSidebarIcon.addEventListener("click", () => {
-    b.classList.remove("body-modal")
-    sidebar.classList.remove("sidebar-open")
-})
 
-sidebarRightChevron.addEventListener("click", () => {
-    sidebarBody.classList.add("sidebar-body-showMore")
-})
+// burgerIcon.addEventListener("click", () => {
+//     b.classList.add("body-modal")
+//     sidebar.classList.add("sidebar-open")
+// })
 
-sidebarLeftChevron.addEventListener("click", () => {
-    sidebarBody.classList.remove("sidebar-body-showMore")
-})
+// closeSidebarIcon.addEventListener("click", () => {
+//     b.classList.remove("body-modal")
+//     sidebar.classList.remove("sidebar-open")
+// })
+
+// sidebarRightChevron.addEventListener("click", () => {
+//     sidebarBody.classList.add("sidebar-body-showMore")
+// })
+
+// sidebarLeftChevron.addEventListener("click", () => {
+//     sidebarBody.classList.remove("sidebar-body-showMore")
+// })
 
 
 

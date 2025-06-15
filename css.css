@@ -94,7 +94,11 @@ main h2 {
   padding: 0.5em 0;
   transform: translateX(100%);
   transition: transform 0.3s ease-out;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.sidebar-body-scrollable {
+  display: flex;
 }
 
 .sidebar-open {
@@ -112,16 +116,15 @@ main h2 {
 
 .sidebar-body {
   padding: 0 0.75em;
-  display: flex;
-  gap: 2em;
   transform: translateX(0%);
   transition: transform 0.3s ease-out;
+  height: 100%;
 }
 
 .sidebar-body ul {
   list-style: none;
   padding: 0;
-  width: 346px;
+  width: calc(375px - 2em);
 }
 
 .sidebar-body-showMore {
@@ -137,6 +140,10 @@ main h2 {
 .sidebar-body-submenu-2 span {
   padding: 1em 0.5em;
   border-bottom: 1px solid var(--text-primary);
+}
+
+.sidebar-body-submenu-2 span i {
+  vertical-align: middle;
 }
 
 .sidebar-body-submenu-2 ul {

@@ -123,15 +123,15 @@ main h2 {
   padding: 0 0.75em;
   transform: translateX(0%);
   transition: transform 0.3s ease-out;
-  height: 100svh;
+  height: 88svh;
   /* position: relative; */
 }
 
 .sidebar-footer {
   height: 50px;
   line-height: 35px;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
   padding-left: 0.75em;
 }
 
